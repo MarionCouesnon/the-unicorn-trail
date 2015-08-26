@@ -1,0 +1,12 @@
+<% blog.articles.each do |article| %>
+<article>
+  <div class="infos-article">
+    <span class="tag"><%= article.tags.join(', ') %></span>
+    <date datetime="...">
+      <div class="Jour">17</div>
+      <div class="Mois">08</div>
+    </date>
+  </div>
+  <header><%= article.title %></header>
+</article>
+<% end %>
