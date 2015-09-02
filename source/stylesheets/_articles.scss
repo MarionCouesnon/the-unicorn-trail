@@ -5,17 +5,15 @@
 article {
   padding: 2%;
   background-color: $primary-color;
-}
-
-article:hover{
-  background-color: $secondary-color;
-}
-
-/* ClearFix Article */
-article::after{
-  content: "";
-  display: table;
-  clear: both;
+  &:hover{
+    background-color: $secondary-color;
+  }
+  /* ClearFix Article */
+  &::after{
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 
 .infos-article {

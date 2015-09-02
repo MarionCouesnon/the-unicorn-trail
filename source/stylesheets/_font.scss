@@ -9,6 +9,13 @@
   line-height: 1.2em;
 }
 
+.side-info {
+  font-weight: 100;
+  text-align: center;
+  line-height: 1.2em;
+}
+
+/****************** (homepage) *********************/
 .tag {
   font-weight: thin;
   letter-spacing: 0.15em;
@@ -24,8 +31,14 @@
   font-weight: 500;
 }
 
-.side-info {
-  font-weight: 100;
-  text-align: center;
-  line-height: 1.2em;
+
+/**************** (article page) *******************/
+.recap-tag-date {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  padding: 5px 10px;
+  background-color: $primary-color;
 }
