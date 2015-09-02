@@ -13,3 +13,20 @@ nav {
   background-color: $third-color;
   padding: 1.5%;
 }
+
+/**************** (article page) *******************/
+.article-background {
+  background-color: $third-color;
+  overflow-y: auto;
+  margin: 20px auto;
+  padding-top: 20px;
+  width: 90%;
+}
+
+.labor-text {
+  width: 90%;
+  margin: auto;
+  font-size: 1em;
+  text-align: left;
+  font-weight: 400;
+}
