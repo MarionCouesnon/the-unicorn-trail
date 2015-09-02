@@ -3,8 +3,8 @@
   <div class="infos-article">
     <span class="tag"><%= article.tags.join(', ') %></span>
     <time datetime="2014-09-01" class="date">
-      <div class="jour"><%= article.date.strftime("%d") %></div>
-      <div class="mois"><%= article.date.strftime("%m") %></div>
+      <div class="day"><%= article.date.strftime("%d") %></div>
+      <div class="month"><%= article.date.strftime("%m") %></div>
     </time>
   </div>
   <h1 class="big-title"><%= link_to article.title, article %></h1>
