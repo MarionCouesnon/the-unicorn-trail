@@ -1,3 +1,23 @@
-body {
-  color: red;
+/****************************************************/
+/********************* SIDE BAR *********************/
+/****************************************************/
+aside {
+  width: 15%;
+  height: 100%;
+  float: left;
+  padding: 0 2.5%;
+  background-color: $secondary-color;
+}
+
+img:first-of-type {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  margin: 20px auto;
+  border: 15px solid $third-color;
+}
+
+p :first-child {
+  font-weight: 800;
 }

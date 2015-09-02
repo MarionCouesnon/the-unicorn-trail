@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
+    <title>The Unicorn Trail</title>
+
+    <%= stylesheet_link_tag 'application' %>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <aside class="side-info">
+        <img src="images/photo.jpg" alt="Illustration de Marion Couesnon">
+        <p><span>Marion Couesnon</span><br> Designer interactif en <a href="http://dsaa.designvillefontaine.com/">DSAA</a> et en alternance chez <a href="http://craftsmen.io">Craftsmen</a></p>
+      </aside>
+      <main role="main">
+        <nav>
+        <%= yield %>
+        </nav>
+        <footer class="side-info">
+          <p> &copy; 2015 Marion Couesnon</p>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>

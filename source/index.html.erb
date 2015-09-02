@@ -2,11 +2,11 @@
 <article>
   <div class="infos-article">
     <span class="tag"><%= article.tags.join(', ') %></span>
-    <date datetime="...">
-      <div class="Jour">17</div>
-      <div class="Mois">08</div>
-    </date>
+    <time datetime="2014-09-01" class="date">
+      <div class="jour"><%= article.date.strftime("%d") %></div>
+      <div class="mois"><%= article.date.strftime("%m") %></div>
+    </time>
   </div>
-  <header><%= article.title %></header>
+  <h1 class="big-title"><%= link_to article.title, article %></h1>
 </article>
 <% end %>

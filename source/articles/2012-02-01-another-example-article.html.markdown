@@ -1,7 +1,7 @@
 ---
-title: Another Example Article
+title: Aussi simple que John Maida
 date: 2012-02-01
-tags: example, awesome
+tags: Lecture
 ---
 
 This is an example article. You probably want to delete it and write your own articles!

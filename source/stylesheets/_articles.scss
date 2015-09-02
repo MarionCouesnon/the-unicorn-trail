@@ -1,0 +1,45 @@
+/****************************************************/
+/********************* ARTICLES *********************/
+/****************************************************/
+
+article {
+  padding: 2%;
+  background-color: $primary-color;
+}
+
+article:hover{
+  background-color: $secondary-color;
+}
+
+/* ClearFix Article */
+article::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.infos-article {
+  width: 10%;
+  float: left;
+  margin-right: 30px;
+  padding-top : 25px;
+}
+
+div>span {
+  display: inline;
+  clear: right;
+  background-color: $third-color;
+  padding: 5px 10px;
+}
+
+.jour {
+  border-bottom: 1px solid $text-color;
+  margin: 15px 1px 0px;
+}
+
+h1 {
+  width: 85%;
+  float: left;
+  padding-left: 10px;
+  margin: 5px 0 5px 0;
+}
