@@ -15,6 +15,17 @@ body {
   font-family: 'Mission Gothic', arial, sans-serif;
 }
 
-#wrapper {
+/****************** (homepage) *********************/
+.homepage-wrapper {
   height: 100%;
+}
+
+/**************** (article page) *******************/
+.article-page {
+  overflow: scroll;
+}
+
+.article-wrap {
+  width: 100%;
+  text-align: center;
 }
