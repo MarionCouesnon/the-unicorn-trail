@@ -1,6 +1,6 @@
 /****************************************************/
 /********************* ARTICLES *********************/
-/****************************************************/
+/******************* (homepage) *********************/
 
 article {
   padding: 2%;
@@ -30,12 +30,12 @@ div>span {
   padding: 5px 10px;
 }
 
-.jour {
+.day {
   border-bottom: 1px solid $text-color;
   margin: 15px 1px 0px;
 }
 
-h1 {
+h1 .homepage {
   width: 85%;
   float: left;
   padding-left: 10px;
