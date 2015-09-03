@@ -41,3 +41,19 @@ h1 .homepage {
   padding-left: 10px;
   margin: 5px 0 5px 0;
 }
+
+/**************** (article page) *******************/
+h1 .article-title {
+  text-align: center;
+  padding-bottom: 20px;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 150px;
+    height: 1px;
+    bottom: 0px;
+    left: calc(50% - 75px);
+    background-color: $text-color;
+  }
+}
