@@ -2,13 +2,15 @@
 /********************** FOOTER **********************/
 /****************************************************/
 
-footer .side-info {
+.side-info {
   padding: 1% 0;
-  .main-footer {
-    background-color: $third-color;
-    clear: both;
-  }
-  .article-footer {
-    background-color: $primary-color;
-  }
+}
+
+.main-footer {
+  background-color: $third-color;
+  clear: both;
+}
+
+.article-footer {
+  background-color: $primary-color;
 }
