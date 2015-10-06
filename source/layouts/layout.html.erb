@@ -9,19 +9,14 @@
   </head>
 
   <body>
-    <div class="homepage-wrapper">
-      <aside class="side-info">
-        <img src="images/photo.jpg" alt="Illustration de Marion Couesnon">
-        <p><span>Marion Couesnon</span><br> Designer interactif en <a href="http://dsaa.designvillefontaine.com/">DSAA</a> et en alternance chez <a href="http://craftsmen.io">Craftsmen</a></p>
-      </aside>
-      <main role="main-homepage">
-        <nav>
+    <aside class="sidebar side-info">
+      <img src="images/photo.jpg" alt="Illustration de Marion Couesnon">
+      <p><span>Marion Couesnon</span><br> Designer interactif en <a href="http://dsaa.designvillefontaine.com/">DSAA</a> et en alternance chez <a href="http://craftsmen.io">Craftsmen</a></p>
+    </aside>
+    <main role="main-homepage">
+      <nav>
         <%= yield %>
-        </nav>
-        <footer class="side-info main-footer">
-          <p> &copy; 2015 Marion Couesnon</p>
-        </footer>
-      </main>
-    </div>
+      </nav>
+    </main>
   </body>
 </html>

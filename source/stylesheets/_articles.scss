@@ -3,57 +3,106 @@
 /******************* (homepage) *********************/
 
 article {
-  padding: 2%;
-  background-color: $primary-color;
-  &:hover{
-    background-color: $secondary-color;
-  }
-  /* ClearFix Article */
-  &::after{
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
-
-.infos-article {
-  width: 10%;
-  float: left;
-  margin-right: 30px;
-  padding-top : 25px;
-}
-
-div>span {
-  display: inline;
-  clear: right;
-  background-color: $third-color;
-  padding: 5px 10px;
-}
-
-.day {
-  border-bottom: 1px solid $text-color;
-  margin: 15px 1px 0px;
-}
-
-h1 .homepage {
-  width: 85%;
-  float: left;
-  padding-left: 10px;
-  margin: 5px 0 5px 0;
-}
-
-/**************** (article page) *******************/
-h1 .article-title {
-  text-align: center;
-  padding-bottom: 20px;
+  @include span-columns(12);
+  padding: 1em;
+  border-width: 1em 1em 1em 0.5em;
+  border-color: white;
   position: relative;
+
   &::after {
-    position: absolute;
     content: "";
+    position: absolute;
     width: 150px;
-    height: 1px;
-    bottom: 0px;
+    height: $small-spacing / 2;
+    background-color: black;
     left: calc(50% - 75px);
-    background-color: $text-color;
+    bottom: 0;
   }
 }
+
+.article-date {
+    display: block;
+    font-size: $base-font-size;
+    font-style: italic;
+    letter-spacing: 0.05em;
+    font-weight: 300;
+}
+
+.article-tag {
+    background-color: steelblue;
+    color: white;
+    display: inline-block;
+    padding: 0.2em 0.4em;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-left: 460px;
+}
+
+.article-content {
+  @include span-columns(12);
+
+  font-family: $base-font-family;
+  font-size: $base-font-size * 5;
+  font-weight: 800;
+  // text-align: center;
+  letter-spacing: $small-spacing / 20;
+  line-height: $heading-line-height;
+}
+
+
+
+// article {
+//   padding: 2%;
+//   background-color: $primary-color;
+//   &:hover{
+//     background-color: $secondary-color;
+//   }
+//   /* ClearFix Article */
+//   &::after{
+//     content: "";
+//     display: table;
+//     clear: both;
+//   }
+// }
+//
+// .infos-article {
+//   width: 10%;
+//   float: left;
+//   margin-right: 30px;
+//   padding-top : 25px;
+// }
+//
+// div>span {
+//   display: inline;
+//   clear: right;
+//   background-color: $third-color;
+//   padding: 5px 10px;
+// }
+//
+// .day {
+//   border-bottom: 1px solid $text-color;
+//   margin: 15px 1px 0px;
+// }
+//
+// h1 {
+//   width: 85%;
+//   float: left;
+//   padding-left: 10px;
+//   margin: 5px 0 5px 0;
+// }
+//
+// /**************** (article page) *******************/
+// h1 .article-title {
+//   text-align: center;
+//   padding-bottom: 20px;
+//   position: relative;
+//   &::after {
+//     position: absolute;
+//     content: "";
+//     width: 150px;
+//     height: 1px;
+//     bottom: 0px;
+//     left: calc(50% - 75px);
+//     background-color: $text-color;
+//   }
+// }

@@ -1,0 +1,26 @@
+$sidebar-bg-color: #ccc;
+$main-bg-color: #efefef;
+$footer-bg-color: #555;
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.sidebar {
+  background-color: $sidebar-bg-color;
+  height: 100%;
+  float: left;
+  padding: 0 2.5%;
+  width: 20%;
+}
+
+main {
+  background-color: $main-bg-color;
+  height: 100%;
+  float: left;
+  width: 80%;
+  // overflow: scroll;
+  margin-bottom: $small-spacing;
+}
