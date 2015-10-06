@@ -18,9 +18,9 @@ html, body {
 
 main {
   background-color: $main-bg-color;
-  height: 100%;
   float: left;
-  width: 80%;
-  // overflow: scroll;
+  height: 100%;
   margin-bottom: $small-spacing;
+  overflow: scroll;
+  width: 80%;
 }

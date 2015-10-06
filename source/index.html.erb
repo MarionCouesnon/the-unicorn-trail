@@ -1,10 +1,12 @@
 <% blog.articles.each do |article| %>
   <article>
-    <p class="article-tag"><%= article.tags.join(', ') %></p>
+    <div class="article-infos">
+      <p class="article-tag"><%= article.tags.join(', ') %></p>
+      <time class="article-date" datetime="<%= article.date %>">
+          <span class="day"> ▪ <%= article.date.strftime("%d/%m/%Y") %></span>
+        </time>
+    </div>
 
     <div class="article-content"><%= article.title %></div>
-    <time class="article-date" datetime="<%= article.date %>">
-        <span class="day">Le <%= article.date.strftime("%d/%m/%Y") %></span>
-    </time>
   </article>
 <% end %>

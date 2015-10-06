@@ -15,3 +15,7 @@ end
 
 activate :deploy do |deploy|
 end
+
+configure :development do
+ activate :livereload
+end

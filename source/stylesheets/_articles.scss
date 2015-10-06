@@ -4,49 +4,51 @@
 
 article {
   @include span-columns(12);
-  padding: 1em;
-  border-width: 1em 1em 1em 0.5em;
-  border-color: white;
+  @include pad(modular-scale(3));
+
   position: relative;
 
   &::after {
-    content: "";
-    position: absolute;
-    width: 150px;
-    height: $small-spacing / 2;
     background-color: black;
-    left: calc(50% - 75px);
     bottom: 0;
+    content: "";
+    height: modular-scale(-2);
+    left: calc(50% - 1.5em);
+    position: absolute;
+    width: modular-scale(3);
   }
 }
 
-.article-date {
-    display: block;
-    font-size: $base-font-size;
-    font-style: italic;
-    letter-spacing: 0.05em;
-    font-weight: 300;
-}
+.article-infos {
+  background-color: steelblue;
+  color: white;
+  display: table;
+  font-size: modular-scale(0);
+  margin-bottom: modular-scale(1);
+  text-transform: uppercase;
+  padding: modular-scale(-5) modular-scale(-1);
 
-.article-tag {
-    background-color: steelblue;
-    color: white;
-    display: inline-block;
-    padding: 0.2em 0.4em;
-    text-transform: uppercase;
-    font-weight: 500;
-    margin-left: 460px;
+  .article-tag {
+    display: table-cell;
+    font-weight: 400;
+    letter-spacing: modular-scale(-8);
+    padding-right: modular-scale(-3);
+  }
+
+  .article-date {
+    display: table-cell;
+    font-weight: 200;
+    letter-spacing: modular-scale(-7);
+  }
 }
 
 .article-content {
   @include span-columns(12);
 
-  font-family: $base-font-family;
-  font-size: $base-font-size * 5;
+  font-size: modular-scale(5);
   font-weight: 800;
-  // text-align: center;
-  letter-spacing: $small-spacing / 20;
-  line-height: $heading-line-height;
+  letter-spacing: modular-scale(-11);
+  line-height: modular-scale(0);
 }
 
 

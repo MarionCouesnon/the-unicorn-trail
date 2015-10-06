@@ -1,9 +1,13 @@
+// Modular scale defaults
+$modular-scale-ratio: $augmented-fourth;
+$modular-scale-base: 1em;
+
 // Typography
 $base-font-family: 'Mission Gothic', arial, sans-serif;
 $heading-font-family: 'Avenir', arial, sans-serif;
 
 // Font Sizes
-$base-font-size: 1em;
+$base-font-size: $modular-scale-base;
 
 // Line height
 $base-line-height: 1.5;

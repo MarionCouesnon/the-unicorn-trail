@@ -1,6 +1,6 @@
 ---
-title: Qu'est-ce qu'une "unicorn"?
-tags: Pensées
+title: Qu'est-ce qu'une "UX unicorn"?
+tags: Question
 ---
 
 # This is an example article. You probably want to delete it and write your own articles!

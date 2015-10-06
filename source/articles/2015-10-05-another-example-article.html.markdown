@@ -1,6 +1,6 @@
 ---
-title: Aussi simple que John Maida
-tags: Lecture
+title: Photoshop est-il sur le déclin ?
+tags: Question
 ---
 
 This is an example article. You probably want to delete it and write your own articles!

@@ -6,4 +6,5 @@ gem 'bourbon';
 gem 'middleman';
 gem 'middleman-blog';
 gem 'middleman-deploy';
+gem 'middleman-livereload';
 gem 'neat';

@@ -1,6 +1,6 @@
 ---
-title: Aussi simple que John Maida
-tags: Lecture
+title: De la Beauté du Design
+tags: Pensée
 ---
 
 This is an example article. You probably want to delete it and write your own articles!
