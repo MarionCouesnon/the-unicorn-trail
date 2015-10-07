@@ -31,7 +31,7 @@ article {
   .article-tag {
     display: table-cell;
     font-weight: 400;
-    letter-spacing: modular-scale(-8);
+    letter-spacing: modular-scale(-7);
     padding-right: modular-scale(-3);
   }
 
@@ -45,9 +45,9 @@ article {
 .article-content {
   @include span-columns(12);
 
-  font-size: modular-scale(5);
-  font-weight: 800;
-  letter-spacing: modular-scale(-11);
+  font-family: $heading-font-family;
+  font-size: modular-scale(4);
+  font-weight: 700;
   line-height: modular-scale(0);
 }
 

@@ -2,20 +2,20 @@
 /********************* SIDE BAR *********************/
 /****************************************************/
 .side-info {
-  line-height: 1.2em;
-  font-weight: 100;
+  font-weight: 400;
+  padding-top: modular-scale(2);
   text-align: center;
-  padding-top: $base-spacing;
+  font-family: $side-font-family;
 }
 
 img:first-of-type {
-  border: $base-border;
   border-radius: 100%;
   height: 150px;
-  margin: 20px auto;
+  margin: $small-spacing auto;
   width: 150px;
 }
 
 .side-info p span {
+  font-family: $heading-font-family;
   font-weight: 800;
 }

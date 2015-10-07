@@ -1,10 +1,11 @@
 // Modular scale defaults
-$modular-scale-ratio: $augmented-fourth;
+$modular-scale-ratio: $golden;
 $modular-scale-base: 1em;
 
 // Typography
-$base-font-family: 'Mission Gothic', arial, sans-serif;
-$heading-font-family: 'Avenir', arial, sans-serif;
+$base-font-family:'jubilat', arial, sans-serif;
+$heading-font-family:'proxima-nova', arial, sans-serif;
+$side-font-family: "ff-tisa-web-pro", arial, sans-serif;
 
 // Font Sizes
 $base-font-size: $modular-scale-base;
