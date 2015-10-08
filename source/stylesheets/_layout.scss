@@ -1,26 +1,31 @@
-$sidebar-bg-color: #ccc;
-$main-bg-color: #efefef;
-$footer-bg-color: #555;
-
 html, body {
-  width: 100%;
+  background-color: $main-bg-color;
   height: 100%;
   overflow: hidden;
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  height: 100%;
 }
 
 .sidebar {
   background-color: $sidebar-bg-color;
-  height: 100%;
-  float: left;
-  padding: 0 2.5%;
-  width: 20%;
+  flex: 1;
+  max-width: 300px;
+  min-width: 200px;
+  padding: 0 10px;
 }
 
 main {
-  background-color: $main-bg-color;
-  float: left;
-  height: 100%;
-  margin-bottom: $small-spacing;
-  overflow: scroll;
-  width: 80%;
+  flex: 2 1 0%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.grid-container {
+  @include outer-container;
+
+  margin-left: 0;
 }

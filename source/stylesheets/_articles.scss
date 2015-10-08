@@ -9,21 +9,23 @@ article {
   position: relative;
 
   &::after {
-    background-color: black;
+    background-color: $text-color;
     bottom: 0;
     content: "";
     height: modular-scale(-2);
-    left: calc(50% - 1.5em);
+    left: calc(50% - 1em);
     position: absolute;
     width: modular-scale(3);
   }
 }
 
 .article-infos {
-  background-color: steelblue;
-  color: white;
+  background-color: darken($sidebar-bg-color, 12%);
+  color: lighten($main-bg-color, 2%);
   display: table;
+  font-family: $side-font-family;
   font-size: modular-scale(0);
+  letter-spacing: modular-scale(-7);
   margin-bottom: modular-scale(1);
   text-transform: uppercase;
   padding: modular-scale(-5) modular-scale(-1);
@@ -31,14 +33,12 @@ article {
   .article-tag {
     display: table-cell;
     font-weight: 400;
-    letter-spacing: modular-scale(-7);
     padding-right: modular-scale(-3);
   }
 
   .article-date {
     display: table-cell;
     font-weight: 200;
-    letter-spacing: modular-scale(-7);
   }
 }
 
@@ -50,61 +50,3 @@ article {
   font-weight: 700;
   line-height: modular-scale(0);
 }
-
-
-
-// article {
-//   padding: 2%;
-//   background-color: $primary-color;
-//   &:hover{
-//     background-color: $secondary-color;
-//   }
-//   /* ClearFix Article */
-//   &::after{
-//     content: "";
-//     display: table;
-//     clear: both;
-//   }
-// }
-//
-// .infos-article {
-//   width: 10%;
-//   float: left;
-//   margin-right: 30px;
-//   padding-top : 25px;
-// }
-//
-// div>span {
-//   display: inline;
-//   clear: right;
-//   background-color: $third-color;
-//   padding: 5px 10px;
-// }
-//
-// .day {
-//   border-bottom: 1px solid $text-color;
-//   margin: 15px 1px 0px;
-// }
-//
-// h1 {
-//   width: 85%;
-//   float: left;
-//   padding-left: 10px;
-//   margin: 5px 0 5px 0;
-// }
-//
-// /**************** (article page) *******************/
-// h1 .article-title {
-//   text-align: center;
-//   padding-bottom: 20px;
-//   position: relative;
-//   &::after {
-//     position: absolute;
-//     content: "";
-//     width: 150px;
-//     height: 1px;
-//     bottom: 0px;
-//     left: calc(50% - 75px);
-//     background-color: $text-color;
-//   }
-// }
