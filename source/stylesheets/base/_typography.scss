@@ -23,10 +23,10 @@ p {
 }
 
 a {
-  color: $action-color;
+  color: $text-color;
+  cursor: pointer;
   text-decoration: none;
   transition: color $base-duration $base-timing;
-
   &:active,
   &:focus,
   &:hover {

@@ -1,6 +1,7 @@
 activate :blog do |blog|
   blog.layout = 'article'
   blog.sources = 'articles/{year}-{month}-{day}-{title}'
+  blog.permalink = '{title}'
 end
 
 set :css_dir, 'stylesheets'

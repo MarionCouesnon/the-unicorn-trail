@@ -4,23 +4,36 @@
     <meta charset="utf-8" />
     <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
     <title>The Unicorn Trail</title>
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'gvk5uda',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
 
     <%= stylesheet_link_tag 'application' %>
   </head>
-  <body class="article-page">
-    <main class="article-background">
-      <div class="article-wrap">
-        <h2 class="recap-tag-date">pensée du 05/08/2015</h2>
-      </div>
-      <h1 class="big-title article-title">Qu'est-ce qu'une "unicorn" ?</h1>
-      <%= yield %>
-      <div class="article-wrap">
-        <a href="https://twitter.com/intent/tweet"><svg class="twitter-share-button" alt="Twitter icon">
-          <path d="M24.826 0C11.137 0 0 11.1 0 24.826c0 13.7 11.1 24.8 24.8 24.826c13.688 0 24.826-11.138 24.826-24.826 C49.652 11.1 38.5 0 24.8 0z M35.901 19.144c0.011 0.2 0 0.5 0 0.742c0 7.551-5.746 16.255-16.259 16.3 c-3.227 0-6.231-0.943-8.759-2.565c0.447 0.1 0.9 0.1 1.4 0.08c2.678 0 5.141-0.914 7.097-2.446 c-2.5-0.046-4.611-1.698-5.338-3.969c0.348 0.1 0.7 0.1 1.1 0.103c0.521 0 1.027-0.068 1.506-0.199 c-2.614-0.524-4.583-2.833-4.583-5.603c0-0.024 0-0.049 0.001-0.072c0.77 0.4 1.7 0.7 2.6 0.7 c-1.532-1.023-2.541-2.773-2.541-4.755c0-1.048 0.281-2.03 0.773-2.874c2.817 3.5 7 5.7 11.8 6 c-0.098-0.419-0.147-0.854-0.147-1.303c0-3.155 2.558-5.714 5.713-5.714c1.644 0 3.1 0.7 4.2 1.8 c1.303-0.256 2.523-0.73 3.63-1.387c-0.43 1.335-1.333 2.454-2.516 3.162c1.157-0.138 2.261-0.444 3.282-0.899 C37.987 17.3 37 18.3 35.9 19.144z"/>
-        </svg></a>
-      </div>
-    </main>
-    <footer class="side-info article-footer">
+  <body>
+    <div class="article-background">
+      <main class="article-wrap">
+        <div class="grid-container">
+          <div class="article-infos">
+            <p class="article-tag"><%= current_article.tags.join(', ') %></p>
+            <time class="article-date" datetime="<%= current_article.date %>">
+                <span class="day"> ▪ <%= current_article.date.strftime("%d/%m/%Y") %></span>
+              </time>
+          </div>
+
+          <div class="article-content">Qu'est-ce qu'une "unicorn" ?</div>
+          <%= yield %>
+        </div>
+      </main>
+    </div>
+    <footer class="article-footer">
       <p>&copy; 2015 Marion Couesnon</p>
     </footer>
   </body>
