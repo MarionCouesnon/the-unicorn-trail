@@ -4,14 +4,13 @@ activate :blog do |blog|
   blog.permalink = '{title}'
 end
 
-set :css_dir, 'stylesheets'
-set :js_dir, 'javascripts'
-set :images_dir, 'images'
+set :relative_links, true
+set :css_dir, 'assets/stylesheets'
+set :js_dir, 'assets/javascripts'
+set :images_dir, 'assets/images'
 
 configure :build do
-  set :build_dir, 'tmp'
-  activate :asset_hash
-  activate :minify_css
+  activate :relative_assets
 end
 
 activate :deploy do |deploy|
