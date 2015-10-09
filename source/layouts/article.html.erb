@@ -28,12 +28,25 @@
               </time>
           </div>
 
-          <div class="article-content">Qu'est-ce qu'une "unicorn" ?</div>
+          <div class="article-content">Qu’est-ce qu’une “UX unicorn” ?</div>
           <div class ="content">
-          <%= yield %>
+            <%= yield %>
+          </div>
+          <div class="navigation-arrows">
+            <p class="arrow-left">
+              <%= link_to_previous_article '<i class="fa fa-arrow-left"></i>' %>
+            </p>
+            <p class="arrow-right">
+              <%= link_to_next_article '<i class="fa fa-arrow-right"></i>' %>
+            </p>
           </div>
           <footer class="article-footer">
-            <p>&copy; 2015 Marion Couesnon</p>
+            <div class="network-wrapper">
+              <p class="medium-link"><a href="https://medium.com/@marioncouesnon"><span class="fa fa-medium"></span> In English please!</a></p>
+              <p class="twitter-link"><a href="https://twitter.com/marioncouesnon"><span class="fa fa-twitter"></span> Tweet me nicely!</a></p>
+              <p class="pinterest-link"><a href="https://www.pinterest.com/marioncouesnon/"><span class="fa fa-pinterest-p"></span> On pin of that!</a></p>
+            </div>
+            <p class="credit">&copy; 2015 Marion Couesnon</p>
           </footer>
         </div>
 

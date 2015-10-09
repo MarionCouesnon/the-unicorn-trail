@@ -1,11 +1,6 @@
 /****************************************************/
 /********************* ARTICLES *********************/
 /******************* (content) *********************/
-body {
-  width: 100%;
-  height: 100%;
-}
-
 .article-background {
   background-color: $sidebar-bg-color;
   bottom: 0;
@@ -31,11 +26,17 @@ body {
 
       .article-content {
         margin-bottom: modular-scale(-1);
+        font-size: modular-scale(3);
+      }
+
+      h1 {
+        font-size: modular-scale(1);
       }
 
 
       .content p{
         margin-top: modular-scale(1);
+        font-size: 1.1em;
 
           &::first-letter {
           background-color: $sidebar-bg-color;
@@ -50,9 +51,34 @@ body {
         }
       }
 
-      .article-footer p {
+      .navigation-arrows {
         text-align: center;
-        //padding: modular-scale(1) 0;
+        p {
+        display: inline;
+        font-size: modular-scale(1);
+
+        .fa-arrow-right{
+          margin-left: modular-scale(-1);
+        }
       }
+    }
+      .article-footer {
+        text-align: center;
+        margin-top: modular-scale(2);
+
+        .network-wrapper {
+          display: flex;
+          justify-content: space-around;
+          margin-bottom: modular-scale(1);
+
+          p * span {
+            display: block;
+            font-size: modular-scale(2);
+          }
+        }
+        .credit {
+          margin: 0;
+        }
+      }
+    }
   }
-}
