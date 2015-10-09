@@ -153,7 +153,7 @@ DEPENDENCIES
   font-awesome-middleman
   middleman
   middleman-blog
-  middleman-deploy
+  middleman-deploy (~> 1.0)
   middleman-livereload
   neat
 
