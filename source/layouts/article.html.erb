@@ -28,7 +28,7 @@
               </time>
           </div>
 
-          <div class="article-content">Qu’est-ce qu’une “UX unicorn” ?</div>
+          <div class="article-content"><%= current_article.title %></div>
           <div class ="content">
             <%= yield %>
           </div>
@@ -36,6 +36,8 @@
             <p class="arrow-left">
               <%= link_to_previous_article '<i class="fa fa-arrow-left"></i>' %>
             </p>
+            <p class="home">
+              <%= link_to '<i class="fa  fa-home"></i>', '/the-unicorn-trail' %>
             <p class="arrow-right">
               <%= link_to_next_article '<i class="fa fa-arrow-right"></i>' %>
             </p>

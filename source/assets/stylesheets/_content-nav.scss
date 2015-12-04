@@ -1,0 +1,12 @@
+.navigation-arrows {
+  text-align: center;
+
+  p {
+  display: inline;
+  font-size: modular-scale(1);
+
+  .fa-arrow-right, .fa-home {
+    margin-left: modular-scale(-1);
+    }
+  }
+}

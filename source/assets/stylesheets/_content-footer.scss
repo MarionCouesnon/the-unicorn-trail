@@ -1,0 +1,19 @@
+.article-footer {
+  text-align: center;
+  margin-top: modular-scale(2);
+}
+
+.network-wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: modular-scale(1);
+
+  p * span {
+    display: block;
+    font-size: modular-scale(2);
+  }
+}
+
+.credit {
+  margin: 0;
+}
